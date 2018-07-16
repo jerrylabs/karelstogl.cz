@@ -1,0 +1,40 @@
+---
+---
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karel Štogl</title>
+  <meta name="description" content="Karel Štogl">
+  <meta name="author" content="JerryLabs">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="{{'assets/css/main.css' | relative_url }}">
+
+</head>
+
+<body>
+
+<div class="wrap">
+  <div class="menu">
+    <a class="logo">
+      <img src="{{ 'assets/img/logo.png' | relative_url }}" />
+    </a>
+    <ul>
+      <li>
+        <a href="{{ '/' | relative_url }}">
+          Titulní strana
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main">
+    {{ content }}
+  </div>
+</div>
+
+</body>
+</html>
