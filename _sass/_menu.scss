@@ -28,6 +28,10 @@
   margin: 2rem 0;
   padding: 0;
   list-style: none;
+
+  li {
+    padding: 10px 0;
+  }
 }
 
 .main {
@@ -58,6 +62,7 @@
 @media (max-width: 905px) {
   .menu-button {
     display: block;
+    cursor: pointer;
   }
   .header {
     position: relative;
@@ -65,11 +70,18 @@
     height: 60px;
     padding: 0;
     margin: auto;
+    text-align: left;
   }
-  .logo img {
-    display: block;
-    height: 60px;
-    width: auto;
+  .logo {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+
+    img {
+      display: block;
+      height: 60px;
+      width: auto;
+    }
   }
   .menu {
     display: none;
@@ -78,10 +90,11 @@
     right: 0;
     background: white;
     margin: 0;
-    padding: 20px;
+    padding: 10px 20px;
+    width: 170px;
+    box-shadow: 0 -15px 0px white, 0 0 20px #ccc;
   }
   .menu li {
-    padding: 10px 0;
     display: block;
     text-align: left;
   }

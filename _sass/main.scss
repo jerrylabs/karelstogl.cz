@@ -2,6 +2,7 @@ $blue: #2785ce;
 $dark-blue: #2171af;
 
 @import 'menu';
+@import 'desatero';
 
 h1, h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -27,4 +28,5 @@ body {
 .pad {
   width: 90%;
   margin: auto;
+  line-height: 1.5;
 }
