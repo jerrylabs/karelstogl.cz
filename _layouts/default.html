@@ -18,14 +18,20 @@
 <body>
 
 <div class="wrap">
-  <div class="menu">
+  <div class="header">
     <a class="logo" href="{{ '/' | relative_url }}">
       <img src="{{ 'assets/img/logo.png' | relative_url }}" />
     </a>
-    <ul>
+    <div class="menu-button">Menu</div>
+    <ul class="menu">
       <li>
         <a href="{{ '/' | relative_url }}">
           Titulní strana
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/kontakt' | relative_url }}">
+          Kontakt
         </a>
       </li>
     </ul>
@@ -36,5 +42,15 @@
   </div>
 </div>
 
+<!-- Scripts -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.menu-button').click(function(){
+        $(this).toggleClass('opened');
+        $('.menu').slideToggle();
+      })
+    });
+  </script>
 </body>
 </html>

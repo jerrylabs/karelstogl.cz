@@ -1,0 +1,91 @@
+
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  width: 13rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main {
+  margin-left: 17rem;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px 0 60px;
+  background: transparent url('../img/menu-open.png') left center no-repeat;
+}
+
+.menu-button.opened {
+  background-image: url('../img/menu-close.png');
+}
+
+@media (min-width: 906px) {
+  .menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 905px) {
+  .menu-button {
+    display: block;
+  }
+  .header {
+    position: relative;
+    width: 90%;
+    height: 60px;
+    padding: 0;
+    margin: auto;
+  }
+  .logo img {
+    display: block;
+    height: 60px;
+    width: auto;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    margin: 0;
+    padding: 20px;
+  }
+  .menu li {
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+  .main {
+    margin-left: 0rem;
+  }
+}
