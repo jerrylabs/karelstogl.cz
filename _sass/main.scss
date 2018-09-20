@@ -25,8 +25,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.jumbotron {
+/*.jumbotron {
   background: transparent url('../img/karelstogl.jpeg') center 30% no-repeat;
+  background-size: cover;
+  height: 25vw;
+}*/
+
+.jumbotron1 {
+  background: transparent url('../img/jumbotron1.jpg') center 55% no-repeat;
   background-size: cover;
   height: 25vw;
 }
