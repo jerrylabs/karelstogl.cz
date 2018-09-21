@@ -1,9 +1,12 @@
 $blue: #2785ce;
 $dark-blue: #2171af;
+$gray: #8a8a8a;
 
 @import 'menu';
 @import 'desatero';
+@import 'home';
 @import 'footer';
+@import 'program';
 
 h1, h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -25,6 +28,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+li, p {
+  max-width: 800px;
+}
+
 /*.jumbotron {
   background: transparent url('../img/karelstogl.jpeg') center 30% no-repeat;
   background-size: cover;
@@ -37,6 +44,23 @@ body {
   height: 25vw;
 }
 
+.jumbotron2, .jumbotron3 {
+  background: transparent url('../img/jumbotron2.jpg') left center no-repeat;
+  background-size: contain;
+  height: 20vw;
+  margin-left: 5%;
+  @media (max-width: 905px) {
+    height: 33vw;
+  }
+  @media (max-width: 550px) {
+    margin-top: 1rem;
+  }
+}
+
+.jumbotron3 {
+  background-image: url('../img/jumbotron3.jpg');
+}
+
 .pad {
   width: 90%;
   margin: auto;
@@ -46,6 +70,14 @@ body {
 .wrap {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 13rem;
+  padding-bottom: 8rem;
   box-sizing: border-box;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
 }
